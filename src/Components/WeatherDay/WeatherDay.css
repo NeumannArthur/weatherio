@@ -1,0 +1,31 @@
+.WeatherDay {
+    text-align: center;
+    border: 0px;
+  
+    font-size: 13px;
+    font-weight: bold;
+
+    height: 150px;
+    width: 150px;
+    border-radius: 25px;
+
+    background-color: #8ecae6;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #219ebc;
+}
+
+p {
+    color: #219ebc;
+}
+
+.cityName {
+    margin-top: 7px;
+}

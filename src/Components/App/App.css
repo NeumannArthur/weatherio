@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.weatherPanel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 400px;
+  width: 900px;
+  border-radius: 100px;
+  
+  background-color: #023047;
+}
+
+.weatherPanel header {
+  font-size: 3rem;
+  color: #fb8500;
+}
