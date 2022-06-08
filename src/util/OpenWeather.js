@@ -1,5 +1,5 @@
 const ApiKey = "ace2d2fde6184702bc775331222405";
-const Base = "http://api.weatherapi.com/v1";
+const Base = "https://api.weatherapi.com/v1";
 
 const Weather = {
 
@@ -10,6 +10,7 @@ const Weather = {
                 console.log(forecastResponse);
                 const jsonResponseForecast = await forecastResponse.json();
                 if (jsonResponseForecast.forecast) {
+                    console.log("Full response!");
                     console.log(jsonResponseForecast);
                     const weatherInfo = {
                         currentWeather: {
@@ -43,6 +44,7 @@ const Weather = {
                             avgHumidity: jsonResponseForecast.forecast.forecastday[0].day.avghumidity,
 
                             key: 2,
+                            icon: jsonResponseForecast.forecast.forecastday[0].day.condition.icon,
                             day: "Today"
                         },
 
@@ -59,6 +61,7 @@ const Weather = {
                             avgHumidity: jsonResponseForecast.forecast.forecastday[1].day.avghumidity,
                             
                             key: 3,
+                            icon: jsonResponseForecast.forecast.forecastday[1].day.condition.icon,
                             day: "Tomorrow"
                         },
 
@@ -75,8 +78,9 @@ const Weather = {
                             avgHumidity: jsonResponseForecast.forecast.forecastday[2].day.avghumidity,
 
                             key: 4,
+                            icon: jsonResponseForecast.forecast.forecastday[2].day.condition.icon,
                             day: "In 2 Days"
-                            
+
                         }]
 
                     };
