@@ -3,8 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Information:
-Latest working build: https://gleaming-brigadeiros-bb8243.netlify.app/ \
+
 This project is just a simple, 2-day weather forecast app made with React. It utilizes weatherapi.com to pull the weather forecast for almost any city in the world. Enjoy :)
+
+Latest working build: https://gleaming-brigadeiros-bb8243.netlify.app/ \
 
 ## Available Scripts
 
